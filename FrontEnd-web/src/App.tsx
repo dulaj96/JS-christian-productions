@@ -1,9 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './components/sections/Home';
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
+import Services from './components/sections/Services';
 
 function App() {
   return (
@@ -18,9 +19,13 @@ function App() {
           <About />
         </div>
 
-        {/* <div id='projects'>
+        <div id='projects'>
           <Projects />
-        </div> */}
+        </div>
+
+        <div id='services'>
+          <Services />
+        </div>
 
 
         {/* <main className="flex-grow">
