@@ -3,6 +3,7 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './components/sections/Home';
 import About from './components/sections/About';
+import Projects from './components/sections/Projects';
 
 function App() {
   return (
@@ -12,11 +13,15 @@ function App() {
         <div>
           <Home />
         </div>
-        
+
         <div id='about'>
-           <About />
+          <About />
         </div>
-       
+
+        {/* <div id='projects'>
+          <Projects />
+        </div> */}
+
 
         {/* <main className="flex-grow">
           <Routes>
