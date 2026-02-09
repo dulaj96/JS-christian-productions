@@ -5,6 +5,7 @@ import Home from './components/sections/Home';
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import Services from './components/sections/Services';
+import Partnerships from './components/sections/Partnerships';
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
 
         <div id='services'>
           <Services />
+        </div>
+
+        <div id='partnerships'>
+          <Partnerships />
         </div>
 
 
