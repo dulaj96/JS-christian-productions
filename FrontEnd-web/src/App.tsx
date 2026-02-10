@@ -6,6 +6,7 @@ import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import Services from './components/sections/Services';
 import Partnerships from './components/sections/Partnerships';
+import Media from './components/sections/Media';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
 
         <div id='services'>
           <Services />
+        </div>
+
+        <div id='media'>
+          <Media />
         </div>
 
         <div id='partnerships'>

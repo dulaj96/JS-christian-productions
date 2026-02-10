@@ -16,11 +16,11 @@ const About = () => {
                         ].map((item, index, array) => (
                             <div key={item.year} className={`mb-12 relative md:w-1/2 ${item.align === 'left' ? 'md:mr-auto md:pr-12 md:text-right' : 'md:ml-auto md:pl-12'} pl-8`}>
                                 {index !== array.length - 1 && (
-                        <div className={`absolute w-0.5 bg-gray-600/40
+                                    <div className={`absolute w-0.5 bg-gray-600/40
                             ${item.align === 'left' ? 'md:left-auto md:-right-px left-2.25' : '-left-0.5'} 
                             top-5 h-[calc(100%+3rem)]`}>
-                        </div>
-                    )}
+                                    </div>
+                                )}
                                 <div className={`absolute -left-2.75 ${item.align === 'left' ? 'md:left-auto md:-right-2.75' : 'md:-left-2.75'} top-0 size-5 bg-yellow-600 rounded-full ring-4 ring-white dark:ring-background-dark`}></div>
                                 <div className="bg-gray-200 dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
                                     <span className="text-yellow-600 dark:text-yellow-400 font-bold text-sm">{item.year}</span>
@@ -58,7 +58,7 @@ const About = () => {
                 </div>
             </section>
 
-             {/* CTA Section */}
+            {/* CTA Section */}
             <section className="max-w-300 mx-auto w-full px-6 lg:px-10 pb-20">
                 <div className="bg-blue-600 rounded-2xl p-8 lg:p-16 text-center text-white relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-8 opacity-10">
@@ -68,9 +68,12 @@ const About = () => {
                     <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto relative z-10">
                         Whether you are a ministry looking for media solutions or a creative wanting to volunteer your skills, we would love to hear from you.
                     </p>
-                    <button className="bg-yellow-500 text-white px-8 py-4 rounded-lg font-bold uppercase tracking-widest hover:bg-[#c4a02d] transition-colors shadow-lg relative z-10">
+                    <a
+                        href="#contact-form"
+                        className="inline-block text-center bg-[#d4af37] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#c4a02d] transition-all transform hover:-translate-y-1 shadow-md uppercase tracking-wider text-sm cursor-pointer"
+                    >
                         Get In Touch
-                    </button>
+                    </a>
                 </div>
             </section>
         </>

@@ -83,8 +83,8 @@ const Projects = () => {
                             key={tab}
                             onClick={() => setActiveTab(tab)}
                             className={`px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 ${activeTab === tab
-                                    ? 'bg-[#d4af37] text-white shadow-md'
-                                    : 'bg-[#0a1432] text-white/80 hover:bg-[#0a1432]/90 hover:text-white'
+                                ? 'bg-[#d4af37] text-white shadow-md'
+                                : 'bg-[#0a1432] text-white/80 hover:bg-[#0a1432]/90 hover:text-white'
                                 }`}
                         >
                             {tab}
@@ -134,10 +134,13 @@ const Projects = () => {
                     <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto">
                         We are ready to partner with you to bring your creative projects to life with excellence and spiritual depth.
                     </p>
-                    <button className="bg-[#1152d4] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#1152d4]/90 transition-all flex items-center gap-2 mx-auto">
+                    <a
+                        href="#contact-form"
+                        className="w-fit max-auto bg-[#1152d4] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#1152d4]/90 transition-all flex items-center gap-2 mx-auto"
+                    >
                         <span>Start Your Project</span>
                         <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                    </button>
+                    </a>
                 </div>
             </main>
         </section>

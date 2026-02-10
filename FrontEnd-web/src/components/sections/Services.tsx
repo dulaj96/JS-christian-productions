@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface ServiceItem {
     id: number;
     title: string;
@@ -124,9 +122,12 @@ const Services = () => {
                                 </div>
 
                                 {/* Action Button */}
-                                <button className="bg-[#d4af37] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#c4a02d] transition-all transform hover:-translate-y-1 shadow-md uppercase tracking-wider text-sm">
+                                <a
+                                    href="#contact-form"
+                                    className="inline-block text-center bg-[#d4af37] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#c4a02d] transition-all transform hover:-translate-y-1 shadow-md uppercase tracking-wider text-sm cursor-pointer"
+                                >
                                     {service.buttonText}
-                                </button>
+                                </a>
                             </div>
 
                         </div>

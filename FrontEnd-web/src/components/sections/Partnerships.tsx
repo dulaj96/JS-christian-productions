@@ -128,7 +128,7 @@ const Partnerships = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold mb-2 text-gray-700 dark:text-gray-300">Full Name</label>
+                  <label className="block text-sm font-semibold mb-2 text-gray-800 dark:text-gray-300">Full Name</label>
                   <input
                     required
                     placeholder='Enter your full name'
@@ -138,7 +138,7 @@ const Partnerships = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2 text-gray-700 dark:text-gray-300">Ministry / Org</label>
+                  <label className="block text-sm font-semibold mb-2 text-gray-800 dark:text-gray-300">Ministry / Org</label>
                   <input
                     placeholder='Enter your organization'
                     className="w-full bg-gray-50 dark:bg-gray-700 border-none rounded-lg focus:ring-2 focus:ring-[#1152d4] h-12 px-4 dark:text-white"
@@ -149,7 +149,7 @@ const Partnerships = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-700 dark:text-gray-300">Email Address</label>
+                <label className="block text-sm font-semibold mb-2 text-gray-800 dark:text-gray-300">Email Address</label>
                 <input
                   required
                   placeholder='hello@gmail.com'
@@ -160,20 +160,21 @@ const Partnerships = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-700 dark:text-gray-300">Collaboration Type</label>
+                <label className="block text-sm font-semibold mb-2 text-gray-800 dark:text-gray-300">Collaboration Type</label>
                 <select
                   className="w-full bg-gray-50 dark:bg-gray-700 border-none rounded-lg focus:ring-2 focus:ring-[#1152d4] h-12 px-4 dark:text-white"
                   onChange={(e) => setFormData({ ...formData, type: e.target.value })}
                 >
-                  <option>Media Production</option>
-                  <option>Software / App Development</option>
-                  <option>Ministry Event Partnership</option>
+                  <option>Music Production</option>
+                  <option>App & Web Development</option>
+                  <option>Video Production</option>
+                  <option>Media Consultation</option>
                   <option>Other</option>
                 </select>
               </div>
 
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-700 dark:text-gray-300">Your Vision</label>
+                <label className="block text-sm font-semibold mb-2 text-gray-800 dark:text-gray-300">Your Vision</label>
                 <textarea
                   placeholder='Tell us about your vision'
                   rows={4}
